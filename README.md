@@ -1,21 +1,24 @@
-Name:SABARI AKASH A
-Register No:212222230124
-Experiment 2
-Date:
-Implementation of Exact Inference Method of Bayesian Network
-Aim:
+<H3>Name:SABARI AKASH A</H3>
+<H3>Register No:212222230124</H3>
+<H3>Experiment 2</H3>
+<H3>Date:</H3>
+<h1 align =center>Implementation of Exact Inference Method of Bayesian Network</h1>
+
+## Aim:
 To implement the inference Burglary P(B| j,⥗m) in alarm problem by using Variable Elimination method in Python.
 
-Algorithm:
-Step 1: Define the Bayesian Network structure for alarm problem with 5 random variables, Burglary,Earthquake,John Call,Mary Call and Alarm.
-Step 2: Define the Conditional Probability Distributions (CPDs) for each variable using the TabularCPD class from the pgmpy library.
-Step 3: Add the CPDs to the network.
-Step 4: Initialize the inference engine using the VariableElimination class from the pgmpy library.
-Step 5: Define the evidence (observed variables) and query variables.
-Step 6: Perform exact inference using the defined evidence and query variables.
-Step 7: Print the results.
+## Algorithm:
 
-Program :
+Step 1: Define the Bayesian Network structure for alarm problem with 5 random variables, Burglary,Earthquake,John Call,Mary Call and Alarm.<br>
+Step 2: Define the Conditional Probability Distributions (CPDs) for each variable using the TabularCPD class from the pgmpy library.<br>
+Step 3: Add the CPDs to the network.<br>
+Step 4: Initialize the inference engine using the VariableElimination class from the pgmpy library.<br>
+Step 5: Define the evidence (observed variables) and query variables.<br>
+Step 6: Perform exact inference using the defined evidence and query variables.<br>
+Step 7: Print the results.<br>
+
+## Program :
+```
 # Importing Library
 from pgmpy.models import BayesianNetwork
 from pgmpy.inference import VariableElimination
@@ -76,8 +79,13 @@ print(res)
 evidence2={"JohnCalls":1,"MaryCalls":1}
 res2=inference.query(variables=[query],evidence=evidence2)
 print(res2)
-Output :
-1PICC 2PICC
+```
 
-Result :
+
+## Output :
+![1PICC](https://github.com/user-attachments/assets/71450aae-2858-4227-be39-2c7fee1b8bd5)
+![2PICC](https://github.com/user-attachments/assets/9cdbe886-bcfc-4ffb-b4c1-6dcd0ae0cec5)
+
+## Result :
 Thus, Bayesian Inference was successfully determined using Variable Elimination Method
+
